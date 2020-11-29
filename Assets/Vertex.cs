@@ -19,4 +19,11 @@ public class Vertex : MonoBehaviour
     {
         
     }
+
+    public void setBuffer(Vector3 v)
+	{
+        Vector3 position = transform.position;
+        position += v;
+        transform.position = position;
+	}
 }

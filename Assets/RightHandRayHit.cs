@@ -47,7 +47,7 @@ public class RightHandRayHit : MonoBehaviour
         }
 		if (RHGon)
 		{
-            if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
+            if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
 			{
                 RHGObject.transform.position = ray.origin + RHGDistance * ray.direction + (RHGPosition - RHGHitPosition);//ヒットしている位置
             }
